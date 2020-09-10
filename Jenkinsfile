@@ -20,7 +20,7 @@ def deployApp(app_name, tag){
         
         case "docker-example":
             echo "Deploying docker-example"
-            deployJob("${app_name}", "${tag}","docker-example-job")
+              deployService("${app_name}","${tag}")
             break
         default:
             echo "No app found ${app_name} to deploy"
